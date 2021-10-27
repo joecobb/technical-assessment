@@ -35,7 +35,7 @@ router.post(
       let schemaType = req.body.schemaType ? req.body.schemaType : 'file';
 
       if (!['file', 'text'].includes(schemaType)) {
-        return res.json({
+        return res.status(400).json({
           message: "[schemaType] only accepts 'file' | 'text'",
         });
       }
@@ -51,7 +51,7 @@ router.post(
       if (schemaType === 'file') {
         if (!req.files['schema'] || req.files['schema'].length === 0) {
           deleteFiles(allFiles);
-          return res.json({
+          return res.status(400).json({
             message: 'schema file is required',
           });
         }
@@ -62,7 +62,7 @@ router.post(
 
       if (!req.files['xml'] || req.files['xml'].length === 0) {
         deleteFiles(allFiles);
-        return res.json({
+        return res.status(400).json({
           message: 'xml file is required',
         });
       }

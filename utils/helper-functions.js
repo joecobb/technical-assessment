@@ -1,5 +1,5 @@
 const fs = require('fs');
-const deleteFiles = (files) => {
+const deleteFiles = (files = []) => {
   for (const file of files) {
     fs.unlink(file.path, (err) => {
       if (err) {
