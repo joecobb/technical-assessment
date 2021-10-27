@@ -1,0 +1,28 @@
+{
+  "name": "technical-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "libxmljs": "^0.19.7",
+    "multer": "^1.4.3",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joecobb/technical-assessment.git"
+  },
+  "author": "Joseph Cobbinah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joecobb/technical-assessment/issues"
+  },
+  "homepage": "https://github.com/joecobb/technical-assessment#readme"
+}
