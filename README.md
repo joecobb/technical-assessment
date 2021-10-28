@@ -7,6 +7,10 @@
 - [express](https://www.npmjs.com/package/express) : A web framework for Nodejs
 - [libxmljs](https://github.com/libxmljs/libxmljs/wiki) : For xml manipulations
 
+## Tools
+- [Postman](https://www.postman.com/) : For testing out the endpoint
+
+
 ## Getting Started
 
 Before you proceed make sure you have [nodejs](https://nodejs.org/en/) installed
